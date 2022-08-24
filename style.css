@@ -1,3 +1,8 @@
+:root {
+    --box-shadow-light: 2px 2px 5px 0px rgba(0,0,0,.15);
+    --box-shadow-mid: 2px 2px 5px 1px rgba(0,0,0,0.25);
+}
+
 html {
     height: 100vh;
     font-family: 'Helvetica', sans-serif;
@@ -25,6 +30,8 @@ span {
 }
 select {
     font-size: 2rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow-light);
 }
 
 .section-container {
@@ -44,8 +51,10 @@ select {
 }
 
 img {
-    max-width: 90rem;
-    max-height: 70rem;
+    border-radius: .5rem;
+    max-width: 50rem;
+    max-height: 30rem;
+    box-shadow: var(--box-shadow-mid);
 }
 
 #emoji {
